@@ -1,0 +1,95 @@
+.mon-compte-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.fiche-compte-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 5%; 
+    margin-left: 30%;
+    width: 40%; 
+}
+
+.fiche-compte h2 {
+    color: #003366;
+    font-weight: bold;
+}
+
+.info-section,
+.adresse-section {
+    margin-bottom: 20px;
+}
+
+.info-section label,
+.adresse-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.info-section input[type="text"],
+.info-section input[type="tel"],
+.info-section input[type="email"],
+.adresse-section input[type="text"],
+.adresse-section input[type="number"]{ 
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pour s'assurer que le padding et la bordure sont inclus dans la largeur */
+    margin-bottom: 10px;
+}
+
+.btn-modifier {
+    background-color: #00317A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-modifier:hover {
+    background-color: #0f6cf8;
+}
+
+.alert {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.alert-closebtn:hover {
+    color: black;
+}
+
+/* Style pour le champ email non modifiable */
+.info-section p {
+    padding: 8px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cosmic-right{
+    color: #446b8c;
+    opacity: 100%;
+}

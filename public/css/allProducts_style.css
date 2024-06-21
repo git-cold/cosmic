@@ -1,0 +1,427 @@
+.articles{
+    background: grey;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.cats {
+    justify-content: center;
+    display: flex;
+    margin-top: 8vw;
+    gap: 24px;
+}
+
+body{
+    margin: 0;
+    background-color: #D9D9D9;
+    overflow: hidden;
+}
+
+
+
+.articles-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80vw;
+    height: auto
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.article-image {
+    width: 90%;
+    max-height: 94%;
+    border-radius: 30px; /* Bords arrondis pour l'image */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Place l'image derrière le contenu texte */
+    margin: 40px 5%;
+}
+
+.article {
+    flex: 0 0 90%;
+    background: grey;
+    padding: 20px;
+    display: none;
+    box-sizing: border-box;
+    margin: 40px 5%;
+    max-width: 100%;
+    height: 65vh;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.article:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.article-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.article:hover .article-content{
+    opacity: 1;
+}
+
+.article-title {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 100%;
+    color: white;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.article-price {
+    font-size: 2rem;
+    align-self: flex-start;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.article.active {
+    display: flex; /* Affiche l'article actif */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 6em; /* Augmenter la taille de la police */
+    background: none; /* Retirer le fond */
+    color: #8D8D8D;
+    border: none; /* Retirer la bordure */
+    z-index: 1;
+    transition: color 0.3s, opacity 0.5s ease-in-out; /* Ajouter une transition de couleur et d'opacité */
+    animation: blink 3s infinite; /* Ajouter une animation de clignotement */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    color: #333; /* Couleur plus foncée au survol */
+    animation: none;
+    transition: color 0.6s;
+}
+
+.carousel-navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-dots.active {
+    background-color: var(--secondary-text-color);
+}
+
+
+.prev-arrow {
+    left: 0;
+}
+
+.next-arrow {
+    right: 0;
+}
+
+
+
+.price-slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.price-slider {
+    flex: 1;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.price-filter{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajouter du style pour positionner les valeurs du prix */
+.price-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.transparent-input {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.transparent-input.min{
+    width: 41px;
+}
+
+.transparent-input.max{
+    width: 40px;
+}
+
+.transparent-input:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
+.noUi-connect {
+    background: none;
+}
+
+.noUi-handle {
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary-text-color);
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+#priceRange {
+    width: 100%; /* Par exemple, ajustez à la valeur souhaitée en pourcentage ou en pixels */
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    top: 0px;
+}
+
+
+#filterButton {
+    align-self: flex-end; /* Aligner le bouton à la fin du conteneur */
+    color: white;
+    background-color: var(--secondary-text-color);
+}
+
+#filterButton:hover{
+    cursor: pointer;
+    background-color: #00317a75;
+}
+
+.btnPrice {
+    border: none;
+    padding: 10px 35px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 100%;
+
+}
+
+
+#materiauxFilterForm{
+    display: flex;
+}
+
+
+.selected {
+    font-weight: bold;
+}
+
+.filter.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+}
+
+.titre-filtre{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item{
+    margin-right: 20px;
+}
+
+.item:hover{
+    color: #333333;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    width: 274px;
+}
+
+
+/*AUCUN ARTICLE CORRESPONDANT*/
+
+.filter-not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.empty-article-text{
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-text-color)
+}
+
+.fas.fa-exclamation-triangle{
+    font-size: 9rem;
+    transform: rotate(343deg);
+    color: var(--secondary-text-color);
+}
+
+.button-continue-search{
+    color: white;
+    margin-top: 40px;
+    width: 35vw;
+    height: 60px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight:700 ;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.btnReset {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+.blue-text{
+    color: var(--secondary-text-color);
+}
+
+
+.ui.dropdown {
+    max-width: 800px;
+}
+
+.ui.selection.dropdown .menu {
+    max-height: 30.0214285763rem;
+}
+
+
+.text{
+    color: var(--secondary-text-color);
+}
+
+.ui.label.transition.visible{
+    color: var(--secondary-text-color);
+}
+
+
+.ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text {
+    color: var(--secondary-text-color)
+}
+
+.lesDeuxBoutons{
+    display: flex;
+}
+
+.lesDifferentsSelect{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+#slide-menu{
+    left: -50vw;
+    position: absolute;
+    transition: left 0.3s ease;
+    background-color: white;
+    padding: 10px;
+    z-index: 999;
+    margin-top: 20px;
+}
+
+.bouton-filtre{
+    padding: 14px;
+    color: white;
+    background-color: var(--secondary-text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 49px;
+}
+.ui.dropdown .menu > .item.selected {
+    display: flex;
+    flex-direction: column
+}
+
+.ui.active.selection.dropdown {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+}

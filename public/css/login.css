@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd
+;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #00317A;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0f6cf8;
+}
+
+.alert,
+.alert-success,
+.alert-danger {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.alert
+
+-success {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.alert-danger {
+    color: white;
+    background-color: #f44336;
+}
+
+.alert-closebtn {
+    margin-left: 15px;
+    color: white;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert-closebtn:hover {
+    color: black;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link-left {
+    text-align: left;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS pour le lien S'inscrire */
+.form-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.register-link {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #00317A;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.register-link:hover {
+    background-color: #f4f4f4;
+    text-decoration: none;
+}

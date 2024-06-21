@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
+:root{
+    --main-bg-color : rgb(237, 237, 237);
+    --primary-text-color : #333333;
+    --principal-button-color : #BCBCBC;
+    --secondary-button-color : #D9D9D9;
+    --product-section-bg-color : #D9D9D9;
+    --secondary-text-color : #00317A;
+    --secondary-text-color-hover : #002867;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+.titre{
+    font-size: 4rem;
+}
+
+.titreAdministration{
+    width: auto;
+    height: auto;
+    transform: translate(30%, 0%);
+    opacity: 50%;
+    letter-spacing: -4px;
+}
+.administration {
+    justify-content: space-between;
+    align-items: center; /* Centrer verticalement dans le conteneur principal */
+}
+
+.gestion{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.titreAjoutProduit{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    opacity: 50%;
+}
+
+.ajouterProduit  {
+    margin-top: 60px;
+}
+
+.titreListeProduit{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    opacity: 50%;
+}
+
+.listeProduit{
+    margin-top: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Couleur de la bordure */
+    border-radius: 5px;
+}
+button {
+    background-color: var(--secondary-text-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    margin-bottom: 100px;
+}
+
+button:hover {
+    background-color: var(--secondary-text-color-hover);
+
+}
+
+.article-table {
+    margin-top: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th, tbody td {
+    border: 1px solid #ddd;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100px; /* Ajustez la valeur selon vos besoins */
+    height: auto;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.bouton-modifier {
+    background-color: var(--principal-button-color);
+    color: white;
+    border: 1px solid var(--principal-button-color);
+}
+
+.bouton-supprimer {
+    background-color: var(--secondary-text-color);
+    color: white;
+    border: 1px solid var(--secondary-text-color);
+}
+
+.bouton:hover {
+    cursor: pointer;
+}
+
+.bouton-modifier:hover {
+    background-color: var(--secondary-button-color);
+    border: 1px solid var(--secondary-button-color);
+}
+
+.bouton-supprimer:hover {
+    background-color: var(--secondary-text-color-hover);
+    border: 1px solid var(--secondary-text-color-hover);
+}
+
+
+.boutonReturn{
+    background-color: var(--secondary-text-color);
+    color: white;
+    border: 1px solid var(--secondary-text-color);
+}
+.boutonReturn:hover{
+    background-color: var(--secondary-text-color-hover);
+    border: 1px solid var(--secondary-text-color-hover);
+}

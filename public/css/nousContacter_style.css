@@ -1,0 +1,186 @@
+body {
+    overflow: hidden;
+}
+
+.hero-section{
+    background-color: #446b8c;
+    height: 100vh; /* Ajoutez cette ligne */
+    display: flex; /* Ajoutez cette ligne */
+    justify-content: center; /* Ajoutez cette ligne */
+    align-items: center; /* Ajoutez cette ligne */
+}
+
+
+label {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+input {
+    width: 30%;
+    padding: 10px 500px 10px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Couleur de la bordure */
+    border-radius: 5px;
+}
+
+textarea{
+    width: 30%;
+    padding: 10px 500px 10px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Couleur de la bordure */
+    border-radius: 5px;
+}
+
+.primary{
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #446b8c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-text{
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+*:focus{outline: none}
+
+.form{
+    display: grid;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.form-item{
+    position: relative;
+    margin-bottom: 15px
+}
+.form-item input{
+    display: block;
+    width: 550px;
+    height: 45px;
+    background: transparent;
+    border: solid 1px #ccc;
+    transition: all .3s ease;
+    padding: 0 15px
+}
+
+.form-item.message{
+    padding: 10px;
+}
+.form-item input:focus{
+    border-color: #446b8c;
+}
+.form-item label{
+    position: absolute;
+    cursor: text;
+    background: white;
+    z-index: 2;
+    top: 16px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease
+}
+.form-item input:focus + label,
+.form-item input:valid + label{
+    font-size: 16px;
+    top: -5px
+}
+.form-item input:focus + label{
+    color: #446b8c;
+}
+
+.btn {
+    font-size:17px;
+    padding:5px 80px 5px 40px;
+    background-color:#446b8c;
+    color:#fff;
+    border-radius:15px;
+    border:2px solid #446b8c;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 4vh;
+}
+.btn:hover {
+    background-color:transparent;
+    color:#446b8c;
+    border:2px solid #446b8c;
+}
+
+.btn:hover .fa-regular {
+    margin-left:232px;
+    background-color:#446b8c;
+    color:white;
+    transform:rotate(360deg);
+}
+.btn:active {
+    background-color:#446b8c;
+    color:white;
+}
+.fa-regular {
+    transition:all 0.5s;
+    background-color:white;
+    color:#446b8c;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 232px;
+    font-size: 1.5em;
+}
+
+.contact{
+    margin-left: 50px;
+}
+
+button{
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-paper-plane::before{
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.fond{
+    width: 700px;
+    height: 700px;
+    background: white;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#message{
+    padding: 80px;
+}
+
+#fichier{
+    padding-top: 10px;
+}

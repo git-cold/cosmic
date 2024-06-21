@@ -1,0 +1,202 @@
+.delivery-container{
+    padding-top: 200px!important;
+    padding : 10vw ;
+}
+
+.delivery-all-container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1.delivery-text{
+    align-self: flex-start;
+}
+
+.delivery-text{
+    font-size: 2vw;
+    margin-bottom : 40px;;
+    font-weight: 500;
+    color : var(--primary-text-color)
+}
+
+.delivery-all-container{
+    margin-top : 6vw;
+}
+
+label{
+    color : var(--primary-text-color);
+}
+
+.delivery-informations-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d8dce3;
+    border-radius: 15px;
+    padding: 80px ;
+    flex-direction: column;
+}
+
+.line-separator{
+    height: 1px;
+    width: 100px;
+    background-color: #333;
+    margin-bottom: 60px; 
+    position: static;
+    width: 100%;
+    opacity: 20%;
+}
+
+.input-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1vw;
+}
+
+.radio-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 2vw;
+}
+
+input[type = "radio"]{
+    display: none;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+.label-container .input{
+    position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
+}
+
+.checkmark {
+    border: 1px solid #3333337c;
+    
+    position: absolute;
+    top: -0.5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    transition : all 200ms ease-in;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .label-container input:checked ~ .checkmark {
+    background-color: var(--secondary-text-color);
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+.label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .label-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+input[type="number"]{
+    -moz-appearance:textfield;
+}
+
+label{
+    font-size: 2vw!important;
+    font-weight: 400!important;
+}
+
+label.secondary-text{
+    font-size : 1.2vw!important;
+    font-weight: 300;
+    margin-left : 20px;
+}
+
+.input-information{
+    height: 69px;
+    border-radius: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 30vw;
+    font-size: 1.5vw;
+    margin-bottom: 45px; 
+    background-color: transparent;
+    border: 1px solid #adadad;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    font-weight: 600;
+    color : var(--primary-text-color)
+}   
+
+
+
+input#numero_adress{
+    width: 10vw;
+}
+
+
+span.obligatory{
+    color : red;
+    font-size : 20px;
+}
+
+
+input{
+    border : none
+}
+
+input:focus-visible{
+    outline: none;
+} 
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+button.paiement-step{
+    font-size: 1.2rem;
+    width: 25vw;
+    height: 65px;
+    color: white;
+    margin-top: 40px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    font-size: 1.2rem!important;
+    font-weight: 500;
+    align-self: center;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #002153;
+
+}

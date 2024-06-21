@@ -1,0 +1,378 @@
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px ;
+    padding-top: 280px;
+}
+
+.product-cart-command-container{
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+    padding : 10px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.panier-nbArticle .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color : var(--secondary-text-color)
+}
+
+.empty-cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.empty-cart-text{
+    margin-top: 130px; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-text-color)
+}
+
+i.fa-solid.fa-cart-plus.fa-2xl{
+    font-size: 9rem;
+    transform: rotate(343deg);
+    color: var(--secondary-text-color);
+}
+
+.button-continue-achat{
+    color: white;
+    margin-top: 40px;
+    width: 35vw;
+    height: 60px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight:500 ;
+    transition: all 300ms ease-in-out;
+}
+
+.button-continue-achat:hover{
+    cursor: pointer;
+    background-color: #00317a75;
+}
+.product-image{
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+
+
+.total-line-price{
+   font-size: 1.3rem;    
+   font-weight: 600;
+}
+
+th, td {
+    border: none;
+    text-align: left; /* Aligner le contenu au début de la colonne */
+    padding: 8px;
+}
+
+
+
+td.delete{
+    margin-left: 50%;
+   padding-left: 35px!important;
+}
+
+button.delete-btn{
+    border: none;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: transform 450ms ease-in-out;
+}
+
+button.delete-btn:hover{
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+
+i.fa-solid.fa-trash-can{
+    transition: all 200ms ease-in-out;
+}
+
+button.delete-btn:hover i.fa-solid.fa-trash-can{
+    
+}
+
+.fa-solid.fa-minus, .fa-solid.fa-plus{
+    color: var(--primary-text-color);
+
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+
+.fa-solid.fa-minus{
+    padding-top: 9px;
+}
+
+.quantity-btn{
+    font-weight: 500;
+}
+
+th{
+    font-weight: 500;
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+
+}
+
+td{
+    padding-right: 35px!important;
+    color: var(--primary-text-color);   
+} 
+
+td.quantite{
+    padding-right: 60px!important;
+}
+
+.quantite{
+    margin-right: 25px;
+}
+
+.product-name{
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+}
+
+.product-price{
+    color: var(--primary-text-color);
+    font-weight: 300;
+}
+.quantity-controll{
+    display: flex;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus-visible{
+    outline: none;
+} 
+
+
+
+
+
+.quantity-btn.minus{
+    position: relative;
+    bottom: 2px;
+    font-size: 1.85rem;
+}
+
+.quantity-btn:hover {
+    cursor: pointer;
+}
+
+.product-line-container{
+    flex-basis: 65%;
+    flex: 1;
+    overflow-y : auto;
+}
+.quantity-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#quantite{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    width : 50%!important;
+    font-weight: 500;
+    color: var(--primary-text-color);
+
+}
+
+.quantity-controll{
+    border-radius: 15px;
+    width: 150px;
+    height: 46px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 8px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #00317A17;
+}
+
+.right-recap{
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+
+.cart-price-container{
+    position: relative;
+    flex-basis: 30%;
+    background-color: #00317A17;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.promo-code-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-text-color);
+}
+
+#promo-code{
+    border : none;
+    height: 55px;
+    width: 450px;
+    padding-left: 10px!important;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    border: 1px #3333333f solid;
+    padding-right: 190px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.line-separator{
+    width: 100%;
+    height: 1px;
+    background-color: #3333333f;
+    margin-bottom: 30px;
+}
+
+.total.sous-total{
+    margin-bottom: 30px;
+}
+
+.total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+
+#promo-code::placeholder{
+    opacity: 30%;
+}
+
+.apply-promo-code{
+    position: relative;
+    width: 40%;
+    align-self: flex-end;
+    height: 48px;
+    background-color: var(--secondary-text-color);
+    border: none;
+    color: white;
+    border-radius: 15px;
+    bottom : 51.5px;
+    font-weight: 600;
+    right: 4px;
+    transition: background-color 200ms ease-in-out;
+
+}
+
+.apply-promo-code:hover, .command-checkout:hover{
+    cursor: pointer; 
+    background-color: #002153!important;
+    
+}
+
+.total{
+    color : var(--primary-text-color)
+}
+
+.total.remise{
+    margin-bottom: 60px;
+}
+
+.total.vrai-total{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+input[type="text"]::-webkit-inner-spin-button,
+input[type="text"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  
+}
+
+input[type="text"]:focus-visible{
+    outline: none;
+} 
+
+.product-price.old-price{
+    color: #66676e;
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.barred-price{
+    text-decoration: line-through;
+}
+
+.product-price.new-price{
+    font-weight:400 ;
+    color: #7a0000;
+    font-size : 20px
+}
+
+.taux-reduc{
+    color:#7a0000;
+    font-weight: 500;
+}
+
+.command-checkout{
+    border: none;
+    color : white;
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-text-color);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: background-color 200ms ease-in-out;
+
+    font-weight: 600;
+}
+

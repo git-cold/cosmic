@@ -1,0 +1,68 @@
+.container{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    flex: 1;
+}
+
+.line{
+    width: 20px;
+    height: 100px;
+}
+
+.content{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produits {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 20px;
+
+}
+
+.produit {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #7d818b;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.image {
+    width: 200px;
+    height: auto;
+}
+
+.paniertop {
+    margin-left: 200px;
+    font-size: 60px;
+}
+
+.prodettotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total {
+    background-color: #7d818b;
+
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.txtprix{
+    margin-bottom:60px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

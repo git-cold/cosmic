@@ -1,0 +1,232 @@
+
+/*Logo*/
+.cosmic-logo{
+    width: 130px;
+    height : 120px;
+    box-sizing: border-box;
+    margin-left: 25px   ;
+    opacity: 50%;
+}
+
+/*Barre de navigation*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height:110px;
+    z-index: 3;
+    top: 0;
+    transition: top 400ms ease-in-out, background-color 400ms ease-in-out;
+}
+
+.navbar.navbar-visible{
+    box-shadow: -1px 9px 13px -1px rgba(0,0,0,0.42);
+    -webkit-box-shadow: -1px 9px 13px -1px rgba(0,0,0,0.42);
+    -moz-box-shadow: -1px 9px 13px -1px rgba(0,0,0,0.42);
+
+}
+
+.nb-article-panier-indic{
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--secondary-text-color);
+    z-index: 1;
+    position: absolute;
+    border-radius: 100%;
+    top: 1vw;
+    left : 95.1vw;
+    color : white;
+    font-weight: 600;
+}
+
+.nb-article-panier-indic.animation{
+    animation: popAnimation 0.3s ease-out;
+}
+
+@keyframes popAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+
+.infos_rapide {
+    line-height: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00317A;
+}
+
+/*Liens*/
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a.link{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:500;
+    transition: opacity ease-in-out 200ms;
+    opacity: 100%;
+}
+
+a.link:hover{
+    opacity: 80%;
+}
+
+
+:link{
+    color: var(--primary-text-color);
+}
+
+
+.navbar ul.menu{
+    align-self: center;
+    left : 25vw;
+    display: flex;
+    line-height: 100px;
+    justify-content: space-around   ;
+    width: 50%;
+    border-radius: 15px;
+}
+
+/* popup */
+
+
+#userPopup {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+.account_link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
+    user-select: none;
+    line-height: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.account_link:hover, .account_link:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.logout-button {
+    background-color: #00317A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Icons et barre de recherche*/
+.icon-container{
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+i.navbar-icon{
+    margin-right : 25px;
+    opacity: 100%;
+    transition: color ease-out 250ms ;
+}
+
+i.navbar-icon:hover{
+    cursor: pointer;
+    color: var(--secondary-text-color)!important;
+}
+
+input.user-search.active{
+   background-color: var(--secondary-button-color);
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-search {
+    padding-right: 40px; /* Ajustez la valeur en fonction de la largeur du bouton */
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+input.user-search{
+    border: none;
+    width: 0px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline;
+    top : -2px;
+    right: -91px;
+    background-color: transparent;
+    border: none;
+}
+
+input.user-search::placeholder{
+    text-indent: 30%;
+}
+
+input.user-search:focus-visible{
+    border: none;
+    outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        display: none;
+    }
+  }

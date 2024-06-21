@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
+body {
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+:root{
+    --main-bg-color : rgb(237, 237, 237);
+    --primary-text-color : #333333;
+    --principal-button-color : #BCBCBC;
+    --secondary-button-color : #D9D9D9;
+    --product-section-bg-color : #D9D9D9;
+    --secondary-text-color : #00317A;
+    --secondary-text-color-hover : #002867;
+}
+
+.titreEdit{
+    width: auto;
+    height: auto;
+    transform: translate(39%, 0%);
+    opacity: 50%;
+    letter-spacing: -4px;
+}
+
+.titre{
+    font-size: 4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formEdit{
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Couleur de la bordure */
+    border-radius: 5px;
+}
+button {
+    width: 30%;
+    background-color: var(--secondary-text-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-text-color-hover);
+
+}
+
+
+

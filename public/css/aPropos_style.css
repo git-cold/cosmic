@@ -1,0 +1,48 @@
+
+body {
+    overflow: hidden;
+}
+
+.primary{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #A1AE99;
+    font-weight: 600;
+}
+
+.hero-section{
+    background-color: #A1AE99;
+    height: 100vh; /* Ajoutez cette ligne */
+    display: flex; /* Ajoutez cette ligne */
+    justify-content: center; /* Ajoutez cette ligne */
+    align-items: center; /* Ajoutez cette ligne */
+}
+
+.texte-secondaire{
+    font-size: 1.8rem;
+    color: var(--primary-text-color);
+    width: 40vw;
+}
+
+.cosmic-right{
+    color: #A1AE99;
+    opacity: 100%;
+}
+
+.container-text{
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraphe{
+    margin-bottom: 10px;
+}
+
+.fond{
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}

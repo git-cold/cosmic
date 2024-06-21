@@ -1,0 +1,187 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.MethodePaiement{
+    border-radius: 10px;
+    margin-left: 32px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+}
+
+.Information{
+    font-size: 2vw;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.titre{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #1A202C;
+    align-self: stretch;
+}
+.SousTitre{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #90A3BF;
+    padding-top: 4px;
+}
+.ButtonRadio{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #1A202C;
+    padding-top: 24px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.CarteCredit{
+    background: #d8dce3;
+    border-radius: 10px;
+    margin-top: 32px;
+    padding: 80px;
+    width: 64vw;
+}
+
+.Achat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.Achat label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+    align-self: stretch;
+    padding-bottom: 16px;
+    padding-top: 33px;
+}
+
+.Achat input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid #adadad;
+    border-radius: 15px;
+    align-self: stretch;
+    width: 30vw;
+    height: 69px;
+    margin-right: 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.text-optionel{
+    font-weight: 200;
+}
+
+.paiement-container{
+    padding-top: 200px;
+}
+
+.Confirmation{
+    width: 852px;
+    height: 352px;
+    border-radius: 10px;
+    margin-left: 32px;
+    padding-left: 24px;
+    padding-top: 24px;
+}
+
+.Accepte input{
+    border: 1.5px solid #90A3BF;
+    margin-top: 34px;
+}
+.Accepte label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #1A202C;
+    padding-left: 44px;
+    margin-top: -22px;
+    margin-left: -10px;
+}
+
+.button{
+    width: 20vw;
+    height: 65px;
+    color: white;
+    background-color: #00317A;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.button:hover{
+
+    cursor: pointer;
+    background-color: #002153;
+
+}
+
+.button.button_conditionnal:disabled{
+    background-color: grey;
+}
+
+.commande{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.numero{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.prix{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
